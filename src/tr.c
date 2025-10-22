@@ -344,6 +344,8 @@ ARRAY1 by repeating its last character as necessary.  Excess characters\n\
 of ARRAY2 are ignored.  Character classes expand in unspecified order;\n\
 while translating, [:lower:] and [:upper:] may be used in pairs to\n\
 specify case conversion.  Squeezing occurs after translation or deletion.\n\
+Arguments passed to tr should be quoted, so that the shell doesn't\n\
+consume regex characters intended for tr.\n\
 "), stdout);
       emit_ancillary_info (PROGRAM_NAME);
     }
